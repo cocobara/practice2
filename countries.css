@@ -1,0 +1,148 @@
+:root {
+    --font-size-base: 14px;
+    --font-size-large: 16px;
+    --font-size-xl: 18px;
+    --font-size-xll: 24px;
+
+    --font-weigh-bold:800;
+
+    --color-white: white;
+    --color-black: black;
+    --color-blue950: #202C36;
+    --color-blue900: #2B3844;
+
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-600: 48px;
+    --spacing-900: 72px;
+    --spacing-1000: 80px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--color-blue950);
+}
+
+.menu_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-blue900);
+    height: 80px;
+    padding: 0 var(--spacing-1000);
+}
+
+.menu_bar__title {
+    color: var(--color-white);
+    font-size: var(--font-size-xll);
+}
+
+
+button {
+    display: inline;
+
+    border: none;
+    background-color: var(--color-blue900);
+    color: var(--color-white)
+}
+
+.menu_bar__mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 106px;
+    color: var(--color-white);
+}
+
+.search_bar__form {
+    width: 480px;
+    max-height: 56px;
+
+}
+
+.search_bar {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: var(--spacing-600) 0;
+    padding: 0 var(--spacing-1000);
+
+}
+
+
+.search_bar__place {
+    position: relative;
+    width: 480px;
+    padding-left: 64px;
+    background-color: var(--color-blue900);
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-white)
+}
+
+
+::placeholder {
+    font-size: var(--font-size-base);
+    color: var(--color-wite)
+}
+
+.search_bar__drop {}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 267px);
+
+
+    column-gap: var(--spacing-900);
+    row-gap: var(--spacing-900);
+    padding: 0 var(--spacing-1000);
+
+}
+
+.cards__item {
+    border-radius: 5px;
+    background-color: var(--color-blue900);
+    color: var(--color-white);
+}
+
+.cards__text {
+    padding: var(--spacing-300) var(--spacing-300) var(--spacing-600);
+    font-size: var(--font-size-base);
+
+}
+
+.cards__img {
+    border-radius: 5px 5px 0 0;
+    width: 267px;
+    height: 160px;
+}
+
+.cards__country {
+    padding-bottom: var(--spacing-200);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weigh-bold);
+
+}
+
+.cards__population {}
+
+.cards__region {
+    padding: 8px 0;
+}
+
+.cards__capital {}
+
+.bold {
+    font-weight: var(--font-weigh-bold);
+}

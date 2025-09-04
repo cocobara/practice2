@@ -1,0 +1,162 @@
+:root {
+    --color-Rose-900: #260F08;
+    --color-Rose-500: #87635A;
+    --color-Red: #C73B0F;
+    --color-Rose-400: #AD8A85;
+    --color-white: white;
+
+    --icon-size: 22px;
+
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 24px;
+    --font-size-xl: 40px;
+
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 900;
+
+
+
+    --space_1100: 88px;
+    --space_500: 40px;
+    --space_400: 32px;
+    --space_300: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #FCF8F6;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin: var(--space_1100) var(--space_500);
+
+
+
+}
+
+.main {
+    margin-right: var(--space_400);
+}
+
+.main__title {
+    margin-bottom: var(--font-size-lg);
+
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    row-gap: var(--space_400);
+    column-gap: var(--space_300);
+
+}
+
+.list__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.link__image {
+    width: 250px;
+    height: 240px;
+
+    border-radius: 8px;
+}
+
+.list__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    left: 45px;
+    bottom: 22px;
+    right: 50px;
+
+
+    width: 160px;
+    height: 44px;
+
+    border: 2px solid var(--color-Rose-400);
+    border-radius: 1000px;
+    color: var(--color-Rose-900);
+    background-color: var(--color-white);
+    font-size: var(--font-size-sm);
+}
+
+.list__icon-add {
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+
+.list__short-name {
+    color: var(--color-Rose-500);
+    font-size: var(--font-size-sm);
+}
+
+.list__full-name {
+    color: var(--color-Rose-900);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+}
+
+.list__price {
+    color: var(--color-Red);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-start;
+
+    width: 384px;
+    background-color: var(--color-white);
+    min-height: 300px;
+    padding: var(--space_300);
+
+    border-radius: 12px;
+}
+
+.cart__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-Red);
+}
+
+.cart__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    min-height: 195px;
+}
+
+.cart__img {
+    height: 101px;
+    width: 121px;
+}
+
+.cart__subtitile {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-Rose-500);
+}
